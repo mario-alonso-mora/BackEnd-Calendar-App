@@ -32,7 +32,7 @@ app.use('/api/auth',require('./routes/auth'));
 
 app.use('/api/events',require('./routes/events'));
 
-app.get('*',(req, resp) =>{
+app.post('*',(req, resp) =>{
 
     resp.sendFile(__dirname + '/public/index.html');
 
