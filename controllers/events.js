@@ -163,7 +163,7 @@ const deleteEvent = async(req = request,resp = response ) =>{
 
         const eventDeleted = await Event.findByIdAndDelete(eventId);
 
-            return resp.json({
+            return resp.status(200).json({
 
             ok:true,
             msg :'The event has been successfully deleted',
