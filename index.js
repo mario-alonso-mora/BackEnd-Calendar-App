@@ -34,7 +34,7 @@ app.use('/api/events',require('./routes/events'));
 
 app.post('*',(req, resp) =>{
 
-    resp.sendFile(__dirname + './public/index.html');
+    resp.sendFile(__dirname + 'public/index.html');
 
 })
 
